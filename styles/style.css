@@ -1,0 +1,66 @@
+.BorderStyle {
+    border: 3px solid #adadad;
+    border-radius: 5px;
+    padding: 20px;
+}
+#clearfix {
+    clear: both;
+}
+#todo {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.lineThrough {
+    text-decoration: line-through;
+}
+#header .header__title {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+#header .header__input {
+    width: calc(100% - 8px);
+    height: 25px;
+}
+#todocontent {
+    margin-top: 10px;
+}
+#todocontent .todocontent__title {
+    font-size: 35px;
+    border-bottom: 1px solid #d0d0d0;
+    padding-bottom: 5px;
+}
+#todocontent .todocontent__list__item {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #d0d0d0;
+    color: #9d9d9d;
+    padding: 8px 0;
+}
+#todocontent .todocontent__list__item__check {
+    text-align: center;
+    width: 8%;
+    display: inline-block;
+    margin: auto 0;
+    vertical-align: center;
+}
+#todocontent .todocontent__list__item__title {
+    display: inline-block;
+    width: 85%;
+}
+#todocontent .todocontent__list__item__delete {
+    float: right;
+}
+#todocontent .todocontent__list__item__delete:hover a {
+    color: #666;
+}
+#todocontent .todocontent__list__item__delete:hover a i {
+    transform: scale(1.1, 1.1);
+    transition: all 0.1s ease;
+}
+#todocontent .todocontent__list__item__delete a {
+    color: #9d9d9d;
+}
+#todocontent .todocontent__clear .todocontent__clear_allitems{
+    text-decoration: none;
+    color: #666;    
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="todo">
+        <div id="header" class="header BorderStyle">
+            <h3 class="header__title">
+                NewToDo
+            </h3>
+            <input type="text" class="header__input" placeholder="請在此輸入待辦事項...">
+        </div>
+
+        <div id="todocontent" class="todocontent BorderStyle">
+            <h3 class="todocontent__title">
+                To Do List
+            </h3>
+            <ul class="todocontent__list">
+                <li class="todocontent__list__item">
+                    <div class="todocontent__list__item__check">
+                        <input type="checkbox">
+                    </div>
+                    <div class="todocontent__list__item__title">
+                        &times;
+                    </div>
+                    <div class="todocontent__list__item__delete">
+                        <a href="#">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                        <div id="clearfix"></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="todocontent__clear">
+                <a href="#" class="todocontent__clear_allitems">全部清除</a>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/all.js"></script>
+</body>
+
+</html>
