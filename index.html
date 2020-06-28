@@ -4,46 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>待辦清單</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
 </head>
 
 <body>
-    <div id="todo">
-        <div id="header" class="header BorderStyle">
-            <h3 class="header__title">
-                NewToDo
-            </h3>
-            <input type="text" class="header__input" placeholder="請在此輸入待辦事項...">
-        </div>
+    <section id="wrap__up">
+        <h1 class="title">NewToDo</h2>
+        <header class="header">
+            <label><input type="checkbox" id="checkAll" />全選/全不選</label>
+            <a href="javascript:;" id="del">删除勾選</a>
+            <input type="text" id="newItemTitle" placeholder="請在此輸入待辦事項..."/>
+            <a href="javascript:;" id="add">
+                <i class="fas fa-plus"></i>
+            </a>
+        </header>
+    </section>
+    <section id="wrap__down">
+        <h2 class="sub_title">ToDoList</h2>
+        <ul id="list">
+            <!-- <li>
+                <input type="hidden" name="index">
+                <input class="option" type="checkbox" />
+                <span>%title%</span>
+                <a href="javascript:;" class="important">%important_des%</a>
+                <a href="javascript:;" class="delete">删除</a>
+            </li> -->
+        </ul>
+    </section>
 
-        <div id="todocontent" class="todocontent BorderStyle">
-            <h3 class="todocontent__title">
-                To Do List
-            </h3>
-            <ul class="todocontent__list">
-                <li class="todocontent__list__item">
-                    <div class="todocontent__list__item__check">
-                        <input type="checkbox">
-                    </div>
-                    <div class="todocontent__list__item__title">
-                        &times;
-                    </div>
-                    <div class="todocontent__list__item__delete">
-                        <a href="#">
-                            <i class="fas fa-trash-alt"></i>
-                        </a>
-                        <div id="clearfix"></div>
-                    </div>
-                </li>
-            </ul>
-            <div class="todocontent__clear">
-                <a href="#" class="todocontent__clear_allitems">全部清除</a>
-            </div>
-        </div>
-    </div>
+    <script type="text/template" id="templateItem">
+            <li>
+                <input type="hidden" name="index">
+                <input class="option" type="checkbox" />
+                <span>%title%</span>
+                <a href="javascript:;" class="important">%important_des%</a>
+                <a href="javascript:;" class="delete">删除</a>
+            </li>
+    </script>
+
+
     <script src="scripts/all.js"></script>
 </body>
 
